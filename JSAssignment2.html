@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment2</title>
+</head>
+<body>
+    <script>
+
+        var number_a = prompt("Please enter first number :");
+        var result = prompt ("Please enter sign :");
+        var number_b = prompt("Please enter second number :");
+
+        number_a = parseInt(number_a)
+        number_b = parseInt(number_b)
+        
+        
+             
+            
+       
+             var result = calculateOperation(number_a , number_b);
+
+             function calculateOperation(number_a , number_b){
+
+                return (number_a - number_b) 
+               /* return (number_a + number_b) 
+                return (number_a * number_b) 
+                return (number_a / number_b) */
+
+            }
+
+           
+
+           
+           var result = calculateSum(number_a , number_b);
+           
+           function calculateSum(number_a , number_b){
+
+             return (number_a + number_b)
+            
+           }
+
+
+          
+           var result = calculateMultiplies(number_a , number_b);
+
+           function calculateMultiplies(number_a , number_b){
+
+             return (number_a * number_b)
+             
+           }
+
+          
+
+           
+           var result = calculateDivides(number_a , number_b);
+
+           function calculateDivides(number_a , number_b){
+
+              return (number_a / number_b)
+              
+            }
+
+           
+
+
+           alert(" Result is :" + result);
+           
+
+    </script>
+</body>
+</html>
