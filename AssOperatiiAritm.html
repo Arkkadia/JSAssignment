@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Operatii Aritmetice</title>
+</head>
+<body>
+    <script> 
+     var number_A = parseFloat(prompt("Please enter first number :"))
+           var operation = prompt("Please enter the sign :")
+           var number_B = parseFloat(prompt("Please enter second number :"))
+
+            var sum = number_A+number_B
+            var substracting = number_A-number_B
+            var multiplication = number_A*number_B      
+            var division = number_A/number_B
+           
+
+         if (isNaN(number_A)|| isNaN(number_B)){
+
+           alert("Value is not a number");
+
+            
+            
+        } else{
+           
+            alert( "Result is" )
+        }
+        
+        
+           
+         switch(operation){
+           case"+" : 
+           alert("Sum is " + sum)
+           break;
+
+           case"-" : 
+           alert("Subtracting is " + substracting)
+           break;
+
+           case "*" : 
+           alert("Multiplication is" + multiplication)
+           break;
+
+           case "/" : 
+           alert("Division is" + division.toFixed(3))
+            break;
+            
+            default : 
+            alert("Unknown operation")
+            break;
+
+         }
+
+
+         function divide(number_A,number_B){
+        
+            if(number_B == 0){
+
+                throw Error("Division by zero is not allowed");
+
+            }
+         return number_A/number_B;
+         }
+
+
+    </script>
+</body>
+</html>
